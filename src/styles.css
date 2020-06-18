@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+.titles{
+    font-size: 32px;
+    color: white;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+}
+.horizlists{
+    /*font*/
+    font-size: 18px;
+    color: black;
+    font-family: fantasy;
+    /*border*/
+    border-style: solid;
+    border-color: black;
+    /*flexbox*/
+    display: flex;
+    justify-content: space-around;
+    /*margins*/
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+button{
+    color: black;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
+.inicioBody{
+    /*background-image: url("https://www.amsterdam-dance-event.nl/img/singles/reinierrrr.jpg?w=1500&h=650&fit=crop-50-50&fm=pjpg");*/
+    background-image: url("https://www.djmegawatt.com/resources/DJ+MEGAWATT+Uplighting.gif");
+    background-repeat: no-repeat, repeat-y;
+    background-size: cover;
+}
+
+.loginBody{
+    background-image: url("https://www.ubackground.com/_ph/86/849751921.jpg");
+    background-repeat: no-repeat, repeat-y;
+    background-size: cover;
+}
+
+.calavera{
+    height: 30%;
+    width: 30%;
+}
+
+.texto{
+    font-size: 24px;
+    color: white;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+}
+
+.DJimages{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reinier{
+    height: 10%;
+    width: 10%;
+}
+
+.anna{
+    width: 10%;
+}
+
+.boris{
+    height: 10%;
+    width: 10%;
+}
+
+.DJnames{
+    display: flex;
+    justify-content: space-around;
+}

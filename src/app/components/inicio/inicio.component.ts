@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageSequenceService } from 'src/app/services/image-sequence.service';
+import { Routes, RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  
   ngOnInit() {
+    //this.ImageSequence.imageSequence();
+  }
+
+  navigateTo(to: string){
+    this.router.navigate([to]);
+  }
+
+  signIn(){
+    this.navigateTo("/login");
   }
 
 }
