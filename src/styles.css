@@ -2,10 +2,30 @@
     font-size: 32px;
     color: white;
     font-family: fantasy;
+    font-style: oblique;
     display: flex;
     justify-content: center;
 }
+
+.form_title{
+    font-size: 32px;
+    color: lightgreen;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+}
+
+.form-body{
+    background-color: red;
+}
+
+.left-justified{
+    margin: auto 100% auto auto;
+}
+
 .horizlists{
+    list-style: none;
+    background: grey;
     /*font*/
     font-size: 18px;
     color: black;
@@ -23,13 +43,39 @@
 
 }
 
-button{
+.button_list_inicio{
     color: black;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: lightgreen;
+    font-family: fantasy;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.buttons{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: lightgreen;
+    font-family: fantasy;
+    font-size: 20px;
+    font-style: oblique;
 }
 
 .centrado{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
 }
 
 .inicioBody{
@@ -39,32 +85,38 @@ button{
     background-size: cover;
 }
 
-.loginBody{
-    background-image: url("https://www.ubackground.com/_ph/86/849751921.jpg");
-    background-repeat: no-repeat, repeat-y;
-    background-size: cover;
-}
-
 .calavera{
     height: 30%;
     width: 30%;
 }
 
-.texto{
+.texto_inicio{
     font-size: 24px;
     color: white;
     font-family: fantasy;
+    font-style: oblique;
     display: flex;
     justify-content: center;
+}
+
+.texto_inicio_bottom{
+    color: white;
+    font-style: oblique;
+    font-size: 24px;
+    font-family: fantasy;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .DJimages{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin: auto;
 }
 
 .reinier{
-    height: 10%;
     width: 10%;
 }
 
@@ -73,11 +125,59 @@ button{
 }
 
 .boris{
-    height: 10%;
     width: 10%;
 }
 
-.DJnames{
+@media
+    (min-width: 375px) and (max-width: 400px),
+    (min-width: 468px),
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
+    img {
+        width: 10%;
+    }
+}
+
+.lista_generos{
+    position: relative;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.lista_generos select{
+    font-family: fantasy;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    
+}
+
+.lista_generos select option{
+    display: flex;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.inputs{
+    border-style: solid;
+    border-radius: 3px;
+    border-color: green;
+    font-family: fantasy;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formRegis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

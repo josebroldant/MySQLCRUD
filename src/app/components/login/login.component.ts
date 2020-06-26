@@ -17,4 +17,12 @@ export class LoginComponent implements OnInit {
     this.router.navigate([to]);
   }
 
+  goToInicio(){
+    this.navigateTo("/inicio");
+  }
+
+  LogIn(){
+    
+  }
+
 }

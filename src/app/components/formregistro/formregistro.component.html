@@ -1,1 +1,31 @@
-<p>form-registro works!</p>
+<div style="background-color: black;">
+    <title class="form_title">FORMULARIO DE REGISTRO</title>
+    <div class="left-justified">
+        <button (click)="goToInicio()" class="buttons">ATRÁS</button>
+    </div>
+    <form class="formRegis">
+        <input placeholder="Nombres" type="text" class="inputs" required/>
+        <input placeholder="Apellidos" type="text" class="inputs" required/>
+        <input placeholder="Correo" type="text" class="inputs" required/>
+        <input placeholder="Contraseña" type="password" class="inputs" required/>
+        <input placeholder="Sexo" type="text" class="inputs" required/>
+        <input placeholder="Edad" type="number" class="inputs" required/>
+        <span class="lista_generos">
+            <div>
+                <label>Géneros de techno que te gustaría conocer: </label>
+            </div>
+            <select required>
+                <option value=0 selected>Common techno</option>
+                <option value=1>Acid</option>
+                <option value=2>Industrial</option>
+                <option value=3>High tech minimal</option>
+                <option value=4>Tech house</option>
+            </select>
+        </span>
+    </form>
+    <div>
+        <button class="buttons">REGISTRARME AHORA</button>
+    </div>
+</div>   
+
+
