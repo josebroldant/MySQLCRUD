@@ -7,12 +7,12 @@ import { LoginComponent } from './components/login/login.component';
 
 //Routes of the app
 const routes: Routes = [
-  {path: 'inicio', component: InicioComponent},
-  {path: 'form-registro', component: FormRegistroComponent},
-  {path: 'perfil', component: PerfilComponent},
+  {path: 'home', component: InicioComponent},
+  {path: 'register-form', component: FormRegistroComponent},
+  {path: 'profile', component: PerfilComponent},
   {path: 'login', component: LoginComponent},
 
-  {path: '**', pathMatch: 'full', redirectTo: 'inicio'}//REDIRIGE AL INICIO
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}//REDIRIGE AL INICIO
 ];
 
 @NgModule({

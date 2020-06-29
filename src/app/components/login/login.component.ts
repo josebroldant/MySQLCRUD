@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   goToInicio(){
-    this.navigateTo("/inicio");
+    this.navigateTo("/home");
   }
 
   LogIn(){

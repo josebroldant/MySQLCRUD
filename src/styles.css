@@ -23,9 +23,9 @@
     margin: auto 100% auto auto;
 }
 
-.horizlists{
+.horz_lists{
     list-style: none;
-    background: grey;
+    background: black;
     /*font*/
     font-size: 18px;
     color: black;
@@ -43,7 +43,40 @@
 
 }
 
-.button_list_inicio{
+.vert_lists{
+    list-style: none;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+    padding: initial;
+
+}
+
+.horz_lists :hover{
+    background-color: lightgreen;
+}
+
+.button_list_inicio_horz{
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+    font-family: fantasy;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.button_list_inicio_horz :hover{
+    background-color: lightgreen;
+    color: black;
+    border-color: lightgreen;
+}
+
+.button_list_inicio_vert{
     color: black;
     border-color: black;
     border-style: solid;
@@ -79,15 +112,19 @@
 }
 
 .inicioBody{
-    /*background-image: url("https://www.amsterdam-dance-event.nl/img/singles/reinierrrr.jpg?w=1500&h=650&fit=crop-50-50&fm=pjpg");*/
     background-image: url("https://www.djmegawatt.com/resources/DJ+MEGAWATT+Uplighting.gif");
     background-repeat: no-repeat, repeat-y;
     background-size: cover;
 }
 
-.calavera{
-    height: 30%;
+.img_test{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    margin-top: -10%;
     width: 30%;
+
+
 }
 
 .texto_inicio{
@@ -99,35 +136,7 @@
     justify-content: center;
 }
 
-.texto_inicio_bottom{
-    color: white;
-    font-style: oblique;
-    font-size: 24px;
-    font-family: fantasy;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.DJimages{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-}
-
-.reinier{
-    width: 10%;
-}
-
-.anna{
-    width: 10%;
-}
-
-.boris{
-    width: 10%;
-}
-
+/*
 @media
     (min-width: 375px) and (max-width: 400px),
     (min-width: 468px),
@@ -137,6 +146,7 @@
         width: 10%;
     }
 }
+*/
 
 .lista_generos{
     position: relative;
@@ -181,3 +191,20 @@
     flex-direction: column;
     align-items: center;
 }
+
+footer{
+    background-color: lightgreen;
+    font-size: 24px;
+    color: black;
+    font-family: fantasy;
+    font-style: oblique;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_media_logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+

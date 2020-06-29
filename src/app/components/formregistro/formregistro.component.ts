@@ -18,7 +18,7 @@ export class FormRegistroComponent implements OnInit {
   }
 
   goToInicio(){
-    this.navigateTo("/inicio");
+    this.navigateTo("/home");
   }
 
 }

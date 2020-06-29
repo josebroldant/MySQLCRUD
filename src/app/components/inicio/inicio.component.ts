@@ -12,11 +12,13 @@ export class InicioComponent implements OnInit {
   constructor(private router: Router) { }
   
   ngOnInit() {
+    /*
     const audio = new Audio('assets/LiveAgain.mp3');
     audio.play();
     if(audio.currentTime>0 && audio.currentTime<10){
       audio.pause();
     }
+    */
   }
 
   navigateTo(to: string){
@@ -28,15 +30,43 @@ export class InicioComponent implements OnInit {
   }
 
   registerNow(){
-    this.navigateTo("/form-registro");
+    this.navigateTo("/register-form");
   }
 
-  quienesSomos(){
-    this.navigateTo("/Quienes-somos");
+  whoWeAre(){
+    this.navigateTo("/who-we-are");
   }
 
   authorRights(){
-    this.navigateTo("/Política-de-derechos-de-autor");
+    this.navigateTo("/author-rights-policy");
+  }
+
+  contactUs(){
+    this.navigateTo("/contact");
+  }
+
+  goToDjs(){
+    this.navigateTo("/djs");
+  }
+
+  goToGenres(){
+    this.navigateTo("/genres");
+  }
+
+  goToPlaces(){
+    this.navigateTo("/rave-places");
+  }
+
+  goToPromoters(){
+    this.navigateTo("/promoters");
+  }
+
+  goToEvents(){
+    this.navigateTo("/next-events");
+  }
+
+  goToOrigins(){
+    this.navigateTo("/origins");
   }
 
 }
